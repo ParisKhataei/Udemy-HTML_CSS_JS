@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employment Registration Form</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Employment Form</h1>
+        <table style="align-content: center;">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname"/></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname"/></td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td>
+                    <select>
+                        <option value="DE">Developer</option>
+                        <option value="EN">Engineer</option>
+                        <option value="HR">Human Resouce</option>
+                        <option value="MN">Manager</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level:</td>
+                <td>
+                    <input type="checkbox" name="entry"/> Entry Level
+                    <input type="checkbox" name="mid"/> Mid Level
+                    <input type="checkbox" name="high"/> highl level
+                </td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td>
+                    <input type="radio" name="status"/>Part-time
+                    <input type="radio" name="status"/>Full-time
+                    <input type="radio" name="status"/>Cotract
+                    <input type="radio" name="status"/>Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments:</td>
+                <td>
+                    <textarea rows="5" cols="45"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button name="submit">Submit</button>
+                    <button name="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

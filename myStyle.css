@@ -1,0 +1,11 @@
+body {
+    background-color: blueviolet;
+}
+h1 {
+    color: rgb(74, 86, 53);
+    text-align: center;
+}
+p {
+    font-family: fantasy;
+    font-size: 20;
+}
