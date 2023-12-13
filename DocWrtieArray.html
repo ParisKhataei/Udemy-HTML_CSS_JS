@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array Practises</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+       
+
+        <script>
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            document.getElementById('demo').innerHTML = "Index in Array: " + names[4];
+            
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            document.getElementById('demo1').innerHTML = "length in Array: " + names.length;
+
+            var names=["Parisa" , "Neeku " , "Mohammad " , "Roya " , "Alireza " , "Pamir"];
+            document.getElementById('demo2').innerHTML = "To output the array with toSting() Method: " + names.toString();
+            
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            document.getElementById('demo3').innerHTML = "To specify the seprator to output the array with join() Method: " + names.join(" - ");
+            
+        </script>
+
+    </body>
+</html>
