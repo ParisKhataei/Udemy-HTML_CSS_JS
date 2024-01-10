@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var text = "";
+            var person = {fname: "ParisA" , age: 31}
+            var x;
+            for(x in person){
+                text += person[x] + " ";
+            }
+            document.getElementById('demo').innerHTML = text;
+        </script>
+    </body>
+</html>
