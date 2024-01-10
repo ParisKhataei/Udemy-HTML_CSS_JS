@@ -7,14 +7,20 @@
     <body>
         <p id="demo"></p>
         <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
         <script>
             var person={firstName:"Paris" , lastName:"Khataei" , age:31 , job:"Developer"}
 
             var studentName1="Mohammad Mousavi";
             var studentName2='Neeku Mousavi';
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var y = "we are the best \"player\" in the country";
 
             document.getElementById('demo').innerHTML= person.firstName + " is a " + person.job + " in a big company ";
             document.getElementById('demo1').innerHTML=studentName1 + "<br>" + studentName2;
+            document.getElementById('demo2').innerHTML= "The lenght of the text is : " + txt.length;
+            document.getElementById('demo3').innerHTML= y;
         </script>
     </body>
 </html>

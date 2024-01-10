@@ -9,6 +9,17 @@
         <p id="demo1"></p>
         <p id="demo2"></p>
         <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+        <p id="demo12"></p>
+        <p id="demo13"></p>
+
        
 
         <script>
@@ -18,12 +29,38 @@
             var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
             document.getElementById('demo1').innerHTML = "length in Array: " + names.length;
 
-            var names=["Parisa" , "Neeku " , "Mohammad " , "Roya " , "Alireza " , "Pamir"];
+            var names=["Parisa" , " Neeku " , " Mohammad " , " Roya " , " Alireza " , " Pamir"];
             document.getElementById('demo2').innerHTML = "To output the array with toSting() Method: " + names.toString();
             
             var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
             document.getElementById('demo3').innerHTML = "To specify the seprator to output the array with join() Method: " + names.join(" - ");
+
+            document.getElementById('demo7').innerHTML = "Add the New Element to the BEGINING: " + names.unshift("Morvarid");
+            document.getElementById('demo6').innerHTML = "Add the New Element to the END: " + names.push("Maryam");
+            document.getElementById('demo4').innerHTML = "Remove the last Element: " + names.pop();
+            document.getElementById('demo5').innerHTML = "Remove the First Element: " + names.shift();
             
+            
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            names[5] = "Someone";
+            delete names[5];
+            document.getElementById('demo8').innerHTML = names.join(" - ")
+            
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            names.splice(1 , 0 , "Morvarid" , "Maryam")
+            document.getElementById('demo9').innerHTML = names.join(" - ")
+
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            names.sort();
+            document.getElementById('demo10').innerHTML = names.join(" - ")
+
+            var names=["Parisa" , "Neeku" , "Mohammad" , "Roya" , "Alireza" , "Pamir"];
+            names.reverse();
+            document.getElementById('demo11').innerHTML = names.join(" - ")
+            
+            var girls= ["Parisa " , "Neeku " , "Leyla" ,"Morvarid" , "Roya" ]
+            var boys = ["Mohammad" , "Mohsen" , "Hasan" , "Alireza" , "Pamir"];
+            document.getElementById('demo12').innerHTML = girls.concat(boys).join(" - ");
         </script>
 
     </body>
